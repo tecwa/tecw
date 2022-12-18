@@ -1,0 +1,200 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 dic. 2022, 20:39:29
+    Author     : ADRIAN CAMPUZANO
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #222222;
+  background-color: #f2f2f0;
+  background-color: #56385a;
+  background-image: url("../images/tec.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+body,
+input,
+button {
+  font-family: 'Muli', sans-serif, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+  outline: none;
+}
+
+.contenedor {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+a {
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.form_contenedor {
+  max-width: 650px;
+  margin: 1cm auto;
+}
+
+.form_cuerpo {
+  background-color: white;
+  padding: 30px;
+  color: black;
+  border-radius: 3px;
+  box-shadow: 20px 20px 10px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+@media only screen and (max-width: 500px) {
+  .form_cuerpo {
+    padding: 50px 40px;
+  }
+}
+
+@media only screen and (max-width: 455px) {
+  .form_cuerpo {
+    padding: 45px 30px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .form_cuerpo {
+    padding: 30px 20px;
+  }
+}
+
+.form_cuerpo .titulo {
+  margin: 0.111111cm;
+  text-align: center;
+  font-weight: lighter;
+}
+
+
+.formulario {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.formulario label {
+  margin-bottom: 5px;
+  color: #52B788;
+  font-weight: bold;
+}
+
+.formulario [type="email"],
+.formulario [type="password"],
+.formulario [type="text"] {
+  padding: 15px;
+  font-size: 16px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  margin-bottom: 15px;
+  transition: background .3s;
+  color: #e6e6e6;
+}
+
+.formulario [type="email"]::placeholder,
+.formulario [type="password"]::placeholder,
+.formulario [type="text"]::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.formulario [type="email"]:hover,
+.formulario [type="password"]:hover,
+.formulario [type="text"]:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.formulario [type="email"]:focus,
+.formulario [type="password"]:focus,
+.formulario [type="text"]:focus {
+  background: #ffffff;
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  border-color: #4a304d;
+  color: #222222;
+}
+
+.formulario [type="email"]:focus::placeholder,
+.formulario [type="password"]:focus::placeholder,
+.formulario [type="text"]:focus::placeholder {
+  color: black;
+}
+
+.formulario [type="submit"] {
+  background: #74C69D;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  font-size: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 20px;
+  color: black;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.formulario [type="submit"]:hover {
+  opacity: .9;
+}
+
+.form_pie div {
+  text-align: center;
+  padding: 25px 20px;
+  font-size: 18px;
+  color: #52B788;
+}
+
+.err_msg {
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 18px;
+    color: red;
+  }
+
+.form_pie div a {
+  color: black;
+}
+
+.err_msg {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 15px;
+}
+  
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.closebtn:hover {
+    color: black;
+}

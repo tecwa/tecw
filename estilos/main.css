@@ -1,0 +1,236 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 dic. 2022, 20:39:46
+    Author     : ADRIAN CAMPUZANO
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("imagenes/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #74C69D;
+    color: #fff;
+}
+
+.menus {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menus li:hover {
+    background-color: black;
+    border-radius: 5px;
+}
+
+.menus li {
+    padding: 5px 14px;
+}
+
+.menus li a {
+    color: white;
+}
+
+.menus .buscar-container {
+    display: block;
+    float: right;
+    margin-left: 10px;
+}
+
+.menus .buscar-container button {
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.menus input[type=text] {
+    border: none;
+    padding: 5px;
+}
+
+.contenido {
+    max-width: 1000px;
+	margin-right:auto;
+	margin-left:auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:100vh;
+}
+
+.tabla {
+    width:100%;
+	border:1px solid
+}
+
+
+
+th {
+    display:flex;
+	width:100%;
+	background:#74C69D;
+	padding:0;
+    color:white;
+	text-decoration: none;
+	position:relative;
+	display:inline-block;
+}
+
+tr {
+    display:flex;
+	width:100%;
+	padding:0;
+    background: #fff;
+    
+}
+
+tr:nth-of-type(odd) {
+    background: rgb(224, 224, 224);
+}
+
+td {
+    flex: 1 1 20%;
+	text-align:center;
+}
+
+.pdf_display {
+    height: 100vh;
+    color: red;
+}
+
+.err_msg {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 15px;
+}
+  
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.closebtn:hover {
+    color: black;
+}
+
+.espacio_tabla{
+    height: 40px;
+}
+
+.titulo {
+    background-color: #52B788;
+    padding: 50px;
+    color: #000000;
+    border-radius: 3px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    margin: 0;
+    text-align: center;
+    font-weight: normal;
+  }
+
+.container_ppal {
+    height: 100%;
+}
+
+.titulo_ppal {
+    height: 100px;
+    width: 100%;
+}
+
+.encabezado {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: calc(100% - 177.783px);
+}
+
+.encabezado #titulo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+.img1, .img2 {
+    position: relative;
+    height: 110px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img1 {
+    background-image: url();
+}
+
+.img2 {
+    background-image: url();
+}
+
+.texto {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.texto span.bordes {
+    background-color: gray;
+    padding: 18px;
+    font-size: 25pt;
+    letter-spacing: 10px;
+    color: white;
+}
+
+.about {
+    display: table;
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+.textoAcerca {
+    display: table-cell;
+    vertical-align: middle;
+}
